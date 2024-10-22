@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+}
+body{
+    height:2000px;
+    background-color: antiquewhite;
+}
+/* каталог бөлімінің басталуы */
+header{
+    background-color: rgb(187, 164, 135);
+    display: flex;
+    align-items: center;
+    transition-duration: 1s;
+}
+header:hover{
+    background-color: rgb(251, 251, 251);
+}
+
+.mebelhover{
+   animation:  povtor 2s infinite;
+}
+.snimok{
+    width: 100%;
+ 
+}
+@keyframes povtor{
+    0%{
+        opacity: 50%;
+        color: antiquewhite;
+    }
+    50%{
+       opacity: 100%;
+       color: antiquewhite;
+    }
+    100%{
+        opacity: 50%;
+        color: antiquewhite;
+    }
+}
+.navigasiya{
+    display: flex;
+}
+.mebelkz{
+    font-size: 40px;
+    text-decoration: none;
+    color: black;
+    padding-left: 35px;
+}
+.katalog, .jurnal, .shourumy{
+    position: relative;
+    top: 20px; 
+    right: 70px;
+    font-size: 22px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition-duration: 1s;
+}
+.katalog:hover{
+    transform: scale(1.3)
+}
+.jurnal:hover{
+    transform: scale(1.3)
+}
+ .shourumy:hover{
+    transform: scale(1.3)
+}
+.katalog{
+    margin-left: 120px;
+    text-decoration: none;
+    color: black;   
+}
+.jurnal{
+    text-decoration: none;
+    padding-left: 20px;
+    color: black;
+}
+.shourumy{
+    text-decoration: none;
+    color:black;
+    padding-left: 20px;
+}
+.search1,.iconsearch{
+    position: relative;
+    top: 20px;
+    
+}
+.search1{
+    margin-left: 30px;
+    padding-left: 90px;
+    position: relative;
+    left: 75px;
+    width: 300px;
+    height: 30px;
+    border-radius: 80px;
+}
+.iconsearch{
+    position: absolute;
+    top: 22px;
+    left: 1020px;
+    height: 20px;
+    width: 20px;
+    border-radius: 25px;
+}
+.person,.heart, .bag{
+    position: relative;
+    left: 215px;
+    border-radius: 100%;
+    margin-left: 300px;
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    
+}
+/* каталог негізгі бөлімі */
+.kat-img{
+    padding:  80px 120px; 
+    z-index: -1;
+    gap: 100px;
+   
+}
+.Aisha1{
+    width: 800px;
+    height: 450px;
+    border-radius: 35px;
+}
+.vibor{
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px 300px;
+  grid-template-rows: 250px 250px ;
+  margin: 50px;
+}
+.bagasy{
+  color: brown;
+  font-weight: bold;
+  font-style: initial;
+}
+span{
+  text-decoration: none;
+}
+.aisha{
+    text-align: center;
+    font-size: 50px;
+    color: chocolate;
+    font-style: italic;
+    
+}
+.aside{
+    width: 220px;
+    height: 220px;
+    transition: 0.6s;
+}
+.aside:hover{
+    border-radius: 18px;
+    transform: scale(0.95);
+}
+/* каталог соңғы бөлімі */
+.footer-clean {
+    padding:50px 0;
+    background-color:  rgb(187, 164, 135);
+    color:#4b4c4d;
+  }
+  
+  .footer-clean h3 {
+    margin-top:0;
+    margin-bottom:12px;
+    font-weight:bold;
+    font-size:16px;
+  }
+  
+  .footer-clean ul {
+    padding:0;
+    list-style:none;
+    line-height:1.6;
+    font-size:14px;
+    margin-bottom:0;
+  }
+  
+  .footer-clean ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-clean ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-clean .item.social {
+    text-align:right;
+  }
+  
+  @media (max-width:767px) {
+    .footer-clean .item {
+      text-align:center;
+      padding-bottom:20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .footer-clean .item.social {
+      text-align:center;
+    }
+  }
+  
+  .footer-clean .item.social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin-left:10px;
+    margin-top:22px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-clean .item.social > a:hover {
+    opacity:0.9;
+  }
+  
+  @media (max-width:991px) {
+    .footer-clean .item.social > a {
+      margin-top:40px;
+    }
+  }
+  
+  @media (max-width:767px) {
+    .footer-clean .item.social > a {
+      margin-top:10px;
+    }
+  }
+  
+  .footer-clean .copyright {
+    margin-top:14px;
+    margin-bottom:0;
+    font-size:13px;
+    opacity:0.6;
+  }

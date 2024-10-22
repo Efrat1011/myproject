@@ -1,0 +1,413 @@
+*{
+    margin: 0;
+}
+body{
+    height: 2500px;
+    background-color: antiquewhite;
+}
+/* Басты беттің басталуы */
+header{
+    background-color: rgb(187, 164, 135);
+    width: 100%;
+    transition-duration: 2s;
+}
+header:hover{
+    background-color: rgb(251, 251, 251);
+}
+/* display flex  қолдандым */
+.navigasiya{ 
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+.mebelkz{
+    font-size: 40px;
+    text-decoration: none;
+    color: black;
+    padding-left: 35px;
+}
+.snimok{
+    width: 100%;
+}
+.mebelhover{
+   animation:  povtor 2s infinite;
+}
+@keyframes povtor{
+    0%{
+        opacity: 50%;
+        color: antiquewhite;
+    }
+    50%{
+       opacity: 100%;
+       color: antiquewhite;
+    }
+    100%{
+        opacity: 50%;
+        color: antiquewhite;
+    }
+}
+a{
+    text-decoration: none;
+}
+.katalog, .jurnal, .shourumy{
+    position: relative;
+    top: 20px; 
+    right: 70px;
+    font-size: 22px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition-duration: 1s;   
+}
+
+.katalog{
+    margin-left: 120px;
+    text-decoration: none;
+    color: black;   
+}
+.jurnal{
+    text-decoration: none;
+    padding-left: 20px;
+    color: black;
+}
+.shourumy{
+    text-decoration: none;
+    color:black;
+    padding-left: 20px;
+}
+.search1,.iconsearch{
+    position: relative;
+    top: 20px;
+    
+}
+.search1{
+    margin-left: 30px;
+    padding-left: 90px;
+    position: relative;
+    left: 75px;
+    width: 300px;
+    height: 30px;
+    border-radius: 80px;
+}
+.iconsearch{
+    position: absolute;
+    top: 22px;
+    left: 1020px;
+    height: 20px;
+    width: 20px;
+    border-radius: 25px;
+}
+.person,.heart, .bag{
+    position: relative;
+    left: 215px;
+    border-radius: 100%;
+    margin-left: 300px;
+    width: 20px;
+    height: 20px;
+    object-fit: cover; 
+}
+
+/* Негізгі бөлім MAIN*/
+.afisha{
+    margin: 40px;
+    border: 2px solid rgb(170, 218, 247);
+    height: 250px;
+    text-align: center;
+    background-color: rgb(154, 214, 252);
+}
+.birthday{
+    
+    margin-top: 80px;
+    font-size: 30px;
+    transition-duration: 1s;
+}
+.skidka{
+    margin-top: 20px;
+    font-size: 22px;
+    transition-duration: 1s;
+}
+.akciya{
+    margin-top: 39px;
+    font-size: 15px;
+    color: rgb(78, 76, 76);
+    transition-duration: 1s;
+}
+/* flex қолдандым */
+.mebeli{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    left: 100px;
+}
+.divan{
+    position: relative;
+    right: 600px;
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    transition-duration: 1s;
+    
+}
+.divan:hover{
+    transform: scale(1.4 );
+    border-radius: 25px;
+    background-color: antiquewhite;
+    
+}
+.krovat{
+    position: absolute;
+    left: 570px;
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    transition-duration: 1s;
+    
+}
+.krovat:hover{
+    transform: scale(1.4 );
+    border-radius: 65px;
+    background-color: antiquewhite;
+}
+.garnitura{
+    position: absolute;
+    left: 1070px;
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    transition-duration: 1s;
+    
+}
+.garnitura:hover{
+    transform: scale(1.4 );
+    border-radius: 55px;
+    background-color: antiquewhite;
+}
+.money{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+    color: red;
+    font-weight: bold;
+}
+.cenadivan{
+    color: rgb(250, 84, 7);
+    border-radius: 30%;
+    width: 100px;
+    font-style: italic;
+}
+.kat1{
+    padding-left: 42px;
+    font-size: 45px;
+    text-align: justify;
+    color: darkorange;
+    font-style: italic;
+}
+.home{
+    font-style: italic;
+    font-size: 40px;
+    color: rgb(235, 66, 4);
+}
+iframe{
+    width: 70%;
+    height: 450px;
+    border-radius: 30px;
+    margin-left: 200px;
+}
+/* дисплей грид қолдандым */
+.grid{
+    margin: 70px;
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: 100px 100px 100px;
+    column-gap: 250px;
+    row-gap: 350px;
+}
+.grid1{
+    border: 2px solid rgb(79, 80, 80);
+    border-radius: 15px;
+    width: 300px;
+    height: 300px;
+    
+}
+
+.txthover{
+    transition-duration: 1s;
+}
+.txthover:hover{
+    color: chocolate;
+    font-style: italic;
+    font-size: 20px;
+}
+@media(max-width:768px){
+    .grid{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media(max-width:576px){
+    .grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media(max-width:450px){
+    .grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+.novinka{
+    font-size: 30px;
+    text-align: center;
+    margin-right: 150px;
+    font-style: italic;
+    color: chocolate;
+}
+.video1{
+    width: 550px;
+    height: 450px;
+    margin-left: 85px;
+    transition-duration:1s;
+}
+.video1:hover{
+    transform: scale(1.1);
+    
+}
+.video2{
+    width: 550px;
+    height: 450px;
+    margin-left: 85px;
+    transition-duration:1s;
+}
+.video2:hover{
+    transform: scale(1.1);
+}
+.video3{
+    width: 550px;
+    height: 450px;
+    position: relative;
+    left: 400px;
+    transition-duration:1s;
+}
+.video3:hover{
+    transform: scale(1.1);;
+}
+.home{
+   text-align: center;
+}
+.idea1{
+    display: flex;
+    justify-content: space-around;
+    gap: 80px;
+    width: 300px;
+    height: 300px;
+    margin-left: 100px;
+    object-fit: cover;
+}
+.hoverfoto{
+    transition: 1s;
+}
+.hoverfoto:hover{
+    transform: scale(1.2);
+}
+.idea2{
+    display: flex;
+    justify-content: space-around;
+    gap: 80px;
+    width: 300px;
+    height: 300px;
+    margin-left: 50px;
+    object-fit: cover;
+}
+.idea3{
+    display: flex;
+    justify-content: space-around;
+    gap: 80px;
+    width: 300px;
+    height: 300px;
+    margin-left: 100px;
+    object-fit: cover;
+}
+.idea4{
+    display: flex;
+    justify-content: space-around;
+    gap: 80px;
+    width: 300px;
+    height: 300px;
+    margin-left: 50px;
+    object-fit: cover;
+}
+.paragraph{
+    padding: 80px 100px;
+    text-align: center;
+}
+/* басты беттің соңы */
+.footer-clean {
+    padding:50px 0;
+    background-color:  rgb(187, 164, 135);
+    color:#4b4c4d;
+  }
+  .footer-clean h3 {
+    margin-top:0;
+    margin-bottom:12px;
+    font-weight:bold;
+    font-size:16px;
+  }
+  .footer-clean ul {
+    padding:0;
+    list-style:none;
+    line-height:1.6;
+    font-size:14px;
+    margin-bottom:0;
+  }
+  .footer-clean ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  .footer-clean ul a:hover {
+    opacity:1;
+  }
+  .footer-clean .item.social {
+    text-align:right;
+  }
+  @media (max-width:767px) {
+    .footer-clean .item {
+      text-align:center;
+      padding-bottom:20px;
+    }
+  }
+  @media (max-width: 768px) {
+    .footer-clean .item.social {
+      text-align:center;
+    }
+  }
+  .footer-clean .item.social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin-left:10px;
+    margin-top:22px;
+    color:inherit;
+    opacity:0.75;
+  }
+  .footer-clean .item.social > a:hover {
+    opacity:0.9;
+  }
+  @media (max-width:991px) {
+    .footer-clean .item.social > a {
+      margin-top:40px;
+    }
+  } 
+  @media (max-width:767px) {
+    .footer-clean .item.social > a {
+      margin-top:10px;
+    }
+  }  
+  .footer-clean .copyright {
+    margin-top:14px;
+    margin-bottom:0;
+    font-size:13px;
+    opacity:0.6;
+  }
